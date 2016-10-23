@@ -1,7 +1,5 @@
 {
-    "name": "cyrrill/letter-avatar",
-    "description": "Provide a simple way to create letter avatar images, like those in your Gmail inbox",
-    "keywords": ["letter", "avatar", "generator"],
+    "name": "cyrrill/namevatar",
     "license": "MIT",
     "authors": [
         {
@@ -23,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "LetterAvatar\\": "src"
+            "Namevatar\\": "src"
         }
     }
 }
