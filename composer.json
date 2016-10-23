@@ -9,8 +9,12 @@
             "email": "dev@tequilarapido.com"
         },
         {
-            "name": "cyrrill",
-        }
+            "name": "Yoga Hanggara",
+            "email": "yohang88@gmail.com"
+        },
+        {
+            "name": "cyrrill"
+        },        
     ],
     "require": {
         "php": ">=5.4.0",
