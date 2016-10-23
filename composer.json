@@ -1,5 +1,5 @@
 {
-    "name": "tequilarapido/letter-avatar",
+    "name": "cyrrill/letter-avatar",
     "description": "Provide a simple way to create letter avatar images, like those in your Gmail inbox",
     "keywords": ["letter", "avatar", "generator"],
     "license": "MIT",
@@ -7,6 +7,9 @@
         {
             "name": "tequilarapido.",
             "email": "dev@tequilarapido.com"
+        },
+        {
+            "name": "cyrrill",
         }
     ],
     "require": {
