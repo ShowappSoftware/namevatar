@@ -4,7 +4,7 @@
 	
 	composer require "cyrrill/namevatar"
 		
-### Generate Namevatar 
+## Generate Namevatar 
  
  	$avatar = new Namevatar\Namevatar;
  	
