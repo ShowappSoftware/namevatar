@@ -1,4 +1,4 @@
-<?php namespace LetterAvatar;
+<?php namespace Namevatar;
 
 /**
  * Class ColorPalette
