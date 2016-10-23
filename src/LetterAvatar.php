@@ -192,6 +192,54 @@ class LetterAvatar
 
         return $this;
     }
+    
+    /**
+     * Generate a 2-letter avatar from a name and return image content
+     * Background color is consistent, and derived from name initial
+     *
+     * @param string   $name 
+     * @param integer  $size
+     * @return         $this
+     */     
+    public function generateFromName($name, $size = null)
+    {
+        $name_initials = '';
+        $words = $this->break_words($name);
+        $number_of_word = 1;
+        foreach ($words as $word) {
+            if ($number_of_word > 2)
+                break;
+            $name_initials .= strtoupper(trim($word[0]));
+            $number_of_word++;
+        }
+        $colors = ColorPalette::getColors();
+        $char_index  = ord($this->name_initials[0]) - 64;
+        $color_index = $char_index % count($colors);
+        $color       = $colors[$color_index];  
+        
+        $this->createImage(
+            $name_initials,
+            $color,
+            $this->getSize($size)
+        );
+
+        return $this;        
+    }
+    
+    /**
+     * @author yohang88/letter-avatar
+     */
+    public function break_words($name) 
+    {
+        $temp_word_arr = explode(' ', $name);
+        $final_word_arr = array();
+        foreach ($temp_word_arr as $key => $word) {
+            if( $word != "" && $word != ",") {
+                $final_word_arr[] = $word;
+            }
+        }
+        return $final_word_arr;
+    }    
 
     /**
      * Save as png
