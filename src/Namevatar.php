@@ -51,7 +51,7 @@ class Namevatar
      *
      * @var float
      */
-    private $fontRatio = 0.8;
+    private $fontRatio = 0.5;
 
     /**
      * Text color
@@ -298,7 +298,6 @@ class Namevatar
         $box = new Box($this->img);
         $box->setFontFace($this->getFontFile());
         $box->setFontColor($this->getTextColor());
-        $box->setTextShadow(new Color(0, 0, 0, 50), 2, 2);
         $box->setFontSize(round($size * $this->fontRatio));
         $box->setBox(0, 0, $size, $size);
         $box->setTextAlign('center', 'center');
