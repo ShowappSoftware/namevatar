@@ -1,9 +1,9 @@
-<?php namespace LetterAvatar;
+<?php namespace Namevatar;
 
 use GDText\Box;
 use GDText\Color;
 
-class LetterAvatar
+class Namevatar
 {
     /**
      * Max size to generate
