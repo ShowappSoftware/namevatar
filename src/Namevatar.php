@@ -92,7 +92,7 @@ class Namevatar
     public function getFontFile()
     {
         if (!$this->fontFile) {
-            return __DIR__ . '/../fonts/OpenSans-Regular.ttf';
+            return __DIR__ . '/../fonts/RobotoMono-Regular.ttf';
         }
 
         return $this->fontFile;
@@ -192,15 +192,15 @@ class Namevatar
 
         return $this;
     }
-    
+
     /**
      * Generate a 2-letter avatar from a name and return image content
      * Background color is consistent, and derived from name initial
      *
-     * @param string   $name 
+     * @param string   $name
      * @param integer  $size
      * @return         $this
-     */     
+     */
     public function generateFromName($name, $size = null)
     {
         $name_initials = '';
@@ -215,21 +215,21 @@ class Namevatar
         $colors = ColorPalette::getColors();
         $char_index  = ord($name_initials[0]) - 64;
         $color_index = $char_index % count($colors);
-        $color       = $colors[$color_index];  
-        
+        $color       = $colors[$color_index];
+
         $this->createImage(
             $name_initials,
             $color,
             $this->getSize($size)
         );
 
-        return $this;        
+        return $this;
     }
-    
+
     /**
      * @author yohang88/letter-avatar
      */
-    public function break_words($name) 
+    public function break_words($name)
     {
         $temp_word_arr = explode(' ', $name);
         $final_word_arr = array();
@@ -239,7 +239,7 @@ class Namevatar
             }
         }
         return $final_word_arr;
-    }    
+    }
 
     /**
      * Save as png
