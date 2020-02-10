@@ -2,7 +2,7 @@
 
 ## Install
 	
-	composer require "cyrrill/namevatar"
+	composer require "showapp/namevatar"
 		
 ## Generate Namevatar 
  
