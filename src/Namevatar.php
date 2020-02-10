@@ -213,8 +213,7 @@ class Namevatar
             $number_of_word++;
         }
         $colors = ColorPalette::getColors();
-        $char_index  = ord($name_initials[0]) - 64;
-        $color_index = $char_index % count($colors);
+        $color_index = abs(ord($name_initials[0]) - 64);
         $color       = $colors[$color_index];
 
         $this->createImage(
